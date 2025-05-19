@@ -1,8 +1,15 @@
 package prompt
 
 import (
-	istrings "github.com/elk-language/go-prompt/strings"
+	istrings "github.com/cork/go-prompt/strings"
 )
+
+type HistoryInterface interface {
+	Add(string)
+	Clear()
+	Older(*Buffer, istrings.Width, int) (*Buffer, bool)
+	Newer(*Buffer, istrings.Width, int) (*Buffer, bool)
+}
 
 // History stores the texts that are entered.
 type History struct {

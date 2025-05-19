@@ -8,8 +8,8 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/elk-language/go-prompt/debug"
-	istrings "github.com/elk-language/go-prompt/strings"
+	"github.com/cork/go-prompt/debug"
+	istrings "github.com/cork/go-prompt/strings"
 )
 
 const inputBufferSize = 1024
@@ -46,7 +46,7 @@ type Prompt struct {
 	buffer                 *Buffer
 	renderer               *Renderer
 	executor               Executor
-	history                *History
+	history                HistoryInterface
 	lexer                  Lexer
 	completion             *CompletionManager
 	keyBindings            []KeyBind

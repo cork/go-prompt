@@ -5,20 +5,10 @@
 [![GoDoc](https://godoc.org/github.com/elk-language/go-prompt?status.svg)](https://godoc.org/github.com/elk-language/go-prompt)
 ![tests](https://github.com/elk-language/go-prompt/workflows/tests/badge.svg)
 
-This is a fork of [c-bata/go-prompt](https://github.com/c-bata/go-prompt).
-It's a great library but it's been abandoned
-for quite a while.
-This project aims to continue its development.
-
-The library has been rewritten in many aspects, fixing existing bugs and adding new essential functionality.
+This is a fork of [elk-language/go-prompt](https://github.com/elk-language/go-prompt).
 
 Most notable changes include:
-- Support for custom syntax highlighting with a lexer
-- Multiline editing
-- A scrolling buffer is used for displaying the current content which makes it possible to edit text of arbitrary length (only the visible part of the text is rendered)
-- Support for automatic indentation when pressing <kbd>Enter</kbd> and the input is incomplete or for executing the input when it is complete. This is determined by a custom callback function.
-
-I highly encourage you to see the [changelog](CHANGELOG.md) which fully documents the changes that have been made.
+- Support for user implemented custom history
 
 ---
 
